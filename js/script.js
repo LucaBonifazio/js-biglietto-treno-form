@@ -1,7 +1,6 @@
 const eleName = document.querySelector('#name');
 const eleKm = document.querySelector('#km');
 const eleAge = document.querySelector('#age');
-const eleBox = document.querySelector('box_info');
 const eleBoxTicket = document.querySelector('.box_ticket');
 const eleConferme = document.querySelector('.btn-success');
 const eleDetelete = document.querySelector('.btn-danger');

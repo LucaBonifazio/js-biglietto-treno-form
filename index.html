@@ -17,10 +17,10 @@
 <body>
     <div class="container text-center">
 
-        <h1>Calcola il prezzo del tuo biglietto</h1>
-        <div class="row container p-4">
-            <div class="col box_info m-auto"> 
-                <form action="" class="p-5">
+        <h1 class="main_title py-5">Calcola il prezzo del tuo biglietto</h1>
+        <div class="row container">
+            <div class="col box_info m-auto bg-dark text-white p-4"> 
+                <form action="" class="d-flex flex-column p-5">
                     <label for="name">Nome e Cognome</label>               
                     <input type="text" name="name" id="name" placeholder="Scrivi qui">
                     <label for="km">Km da percorrere</label>
@@ -31,11 +31,13 @@
                 <div class="btn btn-success">Conferma</div>
                 <div class="btn btn-danger">Annulla</div>
             </div>
-            <div class="box_ticket show">
-
-            </div>
         </div>
 
+        <div class="row container mt-5">
+            <div class="col box_ticket m-auto bg-dark text-white p-4 show">
+            
+            </div>
+        </div>
     </div>
 </body>
 </html>

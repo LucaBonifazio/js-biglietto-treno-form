@@ -20,5 +20,5 @@ totalPrice = parseFloat(totalPrice.toFixed(2));
 
 eleConferme.addEventListener('click', function () {
 	console.log('Conferma cliccata');
-	eleBoxTicket.classList.add('show');
+	eleBoxTicket.classList.add('box_ticket');
 });

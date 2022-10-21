@@ -23,10 +23,16 @@
                 <form action="" class="d-flex flex-column p-5">
                     <label for="name">Nome e Cognome</label>               
                     <input type="text" name="name" id="name" placeholder="Scrivi qui">
+
                     <label for="km">Km da percorrere</label>
                     <input type="number" name="km" id="km" placeholder="Scrivi qui">
+
                     <label for="age">Fascia d'età</label>
-                    <input type="number" name="age" id="age" placeholder="Scrivi qui">
+                    <select name="age" id="age" form="age">
+                        <option value="min">Minorenne</option>
+                        <option value="max">Maggiorenne</option>
+                        <option value="over">Over 65</option>
+                    </select>
                 </form>
                 <div class="btn btn-success">Conferma</div>
                 <div class="btn btn-danger">Annulla</div>

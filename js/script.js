@@ -12,17 +12,39 @@ eleConferme.addEventListener('click', function () {
     const age = eleAge.value;
     let discount = 0;
 
-    if (age === '.min') {
+    if (age === 'min') {
         discount = 20;
-    } else if (age === '.over') {
+    } else if (age === 'over') {
         discount = 40;
     }
 
-    let totalPrice = basePrice - basePrice * discount / 100;
-    totalPrice = parseFloat(totalPrice.toFixed(2));
-    eleBoxTicket.innerHTML = (`Questo è il prezzo del tuo biglietto: ${totalPrice}€. Fai buon viaggio!` );
+    if (eleName.value === '' || eleKm.value === '' || eleAge.value === 'none'){
+        eleBoxTicket.innerHTML = (`Compila il form per generare il tuo biglietto!` );
+    } else {
+        let totalPrice = basePrice - basePrice * discount / 100;
+        totalPrice = parseFloat(totalPrice.toFixed(2));
+        eleBoxTicket.innerHTML = (`Prezzo del biglietto: ${totalPrice} €.` );
+        
+        const fullName = eleName.value;
+        const userName = document.querySelector('.ticket_name');
+        userName.innerHTML = (`${fullName}` );
+    
+        const eleWagon = document.querySelector('.wagon');
+        numberWagon = Math.floor(Math.random() * 100);
+        eleWagon.innerHTML = (`Vagone: ${numberWagon}` );
+    
+        const eleCode = document.querySelector('.code');
+        numberCode = Math.floor(Math.random() * 10000000);
+        eleCode.innerHTML = (`Codice CP: n°${numberCode}` );
+    
+        const eleSweet = document.querySelector('.sweet');
+        eleSweet.innerHTML = (`Buon viaggio!` );
+    }
+
 });
 
 eleDetelete.addEventListener('click', function () {
     document.location.reload();
 });
+
+

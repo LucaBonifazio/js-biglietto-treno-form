@@ -15,7 +15,7 @@
       <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="container text-center">
+    <div class="container text-center bg_main">
 
         <h1 class="main_title py-5">Calcola il prezzo del tuo biglietto</h1>
         <div class="row container">
@@ -29,6 +29,7 @@
 
                     <label for="age">Fascia d'età</label>
                     <select name="age" id="age" form="age">
+                        <option value="none">---</option>
                         <option value="min">Minorenne</option>
                         <option value="max">Maggiorenne</option>
                         <option value="over">Over 65</option>
@@ -40,10 +41,17 @@
         </div>
 
         <div class="row container mt-5">
-            <div class="col box_ticket m-auto bg-dark text-white p-4 show">
-            
+            <div class="col m-auto bg-dark text-white p-4 show">
+                <h2>Dettagli passeggero</h2>
+                <div class="ticket_box container bg_ticket text-black">
+                    <div class="ticket_name"></div>
+                    <div class="wagon"></div>
+                    <div class="code"></div>
+                    <div class="box_ticket"></div>
+                    <div class="sweet"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </div> 
 </body>
 </html>
